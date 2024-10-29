@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", serif;
+  padding-top: 60px;
+}
+
+p,
+h2 {
+  margin: 0;
+}

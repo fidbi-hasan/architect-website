@@ -1,0 +1,89 @@
+
+
+/* projects section */
+.projects-section,
+.about-section {
+  margin: 80px 55px;
+}
+
+.projects-section h2,
+.about-section h2 {
+  font-weight: 400;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0 40px 0;
+}
+
+.project-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.project-image-container img {
+  width: 100%;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-container .tooltip {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* about section */
+
+.about-section-description {
+  word-spacing: 2px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.team-members-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.single-team-member img {
+  width: 100%;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.designation {
+  color: gray;
+  margin: 15px 0;
+}
+
+.about-member {
+  font-size: 17px;
+  letter-spacing: 0.2px;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.contact-button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #ccc;
+}

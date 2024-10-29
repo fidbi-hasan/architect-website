@@ -1,0 +1,80 @@
+.nav-bar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.left-section p {
+  letter-spacing: 4px;
+  word-spacing: 3px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.left-section p:hover {
+  background-color: #ddd;
+}
+
+.left-section p span {
+  font-weight: 900;
+}
+
+.right-section ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.right-section ul li {
+  display: inline-block;
+}
+
+.right-section ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 14px;
+  color: black;
+  letter-spacing: 4px;
+}
+
+.right-section ul li:hover a {
+  background-color: #ddd;
+}
+
+/* hero section */
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section img {
+  width: 100%;
+}
+
+.overlay-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-text-container p {
+  letter-spacing: 5px;
+  font-size: 30px;
+  color: white;
+}
+
+.overlay-text-container p span {
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+}

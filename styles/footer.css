@@ -1,0 +1,65 @@
+.contact-section {
+  margin: 80px 55px 40px 55px;
+}
+
+.contact-section h2 {
+  font-weight: 400;
+}
+
+.contact-section .bottom-border {
+  margin: 20px 0;
+}
+
+.contact-section p {
+  margin: 20px 0;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+
+.contact-section form input::placeholder {
+  font-weight: 300;
+}
+
+.contact-section button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* map section */
+
+.map-section {
+  margin: 30px 55px 10px 55px;
+}
+
+.map-section img {
+  width: 100%;
+}
+
+.ending-text-section {
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
