@@ -3,214 +3,465 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-    <title>Architect Website</title>
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <meta name="description" content="BR Architects — Engineered spatial intelligence and architectural design.">
+    <title>BR Architects — Spatial Intelligence & Architecture</title>
 
-    <!-- font -->
+    <!-- Google Fonts: Inter & Geist Mono (substitutes for Universal Sans & Geist Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
   </head>
   <body>
+    <!-- Global Navigation -->
     <header>
       <nav class="nav-bar">
-        <div class="left-section">
-          <p>
-            <span>BR</span> Architects
-          </p>
-        </div>
-        <div class="right-section">
-          <ul>
+        <div class="container">
+          <a href="#" class="nav-brand">
+            <span class="brand-title">BR Architects</span>
+            <span class="brand-tag">// STUDIO</span>
+          </a>
+
+          <ul class="nav-menu">
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+
+          <div class="nav-cta">
+            <a href="#contact" class="btn btn-outline-sm">Inquire</a>
+          </div>
         </div>
       </nav>
 
-      <section class="hero-section">
-        <img src="images/hero-image.jpg">
+      <!-- Hero Band -->
+      <section class="hero-band">
+        <div class="container">
+          <div class="hero-content">
+            <div class="eyebrow-mono">// SPATIAL INTELLIGENCE & ARCHITECTURE</div>
+            <h1 class="display-xl">BR Architects</h1>
+            <p class="hero-subtitle">
+              Designing high-precision structures at the convergence of pure geometry, sustainable materials, and structural discipline.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-outline">Explore Selected Works</a>
+              <a href="#contact" class="btn btn-primary">Start Consultation</a>
+            </div>
+          </div>
 
-        <div class="overlay-text-container">
-          <p>
-            <span>BR</span> Architects
-          </p>
+          <div class="hero-media-wrapper">
+            <img src="images/hero-image.jpg" alt="BR Architects — Structural Design and Modern Architecture">
+            <div class="hero-media-meta">
+              <span>// ARCHITECTURAL HEADQUARTERS &bull; STRUCTURE 01</span>
+              <span class="coord">40.7128° N, 74.0060° W</span>
+            </div>
+          </div>
         </div>
       </section>
     </header>
 
+    <!-- Main Content -->
     <main>
-      <section class="projects-section" id="projects">
-        <h2>Projects</h2>
-        
-        <div class="bottom-border"></div>
+      <!-- Projects Section -->
+      <section class="content-band" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow-mono">// 01 &mdash; PORTFOLIO &amp; WORKS</div>
+            <h2 class="display-md">Selected Projects</h2>
+            <div class="divider-hairline"></div>
+          </div>
 
-        <div class="project-image-container">
-          <div class="tooltip-container">
-            <img src="images/house1.jpg">
-            <div class="tooltip">
-              Summer House
-            </div>
-          </div>
-          <div class="tooltip-container">
-            <img src="images/house2.jpg">
-            <div class="tooltip">
-              Brick House
-            </div>
-          </div>
-          <div class="tooltip-container">
-            <img src="images/house3.jpg">
-            <div class="tooltip">
-              Renovated
-            </div>
-          </div>
-          <div class="tooltip-container">
-            <img src="images/house4.jpg">
-            <div class="tooltip">
-              Barn House
-            </div>
-          </div>
-          <div class="tooltip-container">
-            <img src="images/house2.jpg">
-            <div class="tooltip">
-              Brick House
-            </div>
-          </div>
-          <div class="tooltip-container">
-            <img src="images/house1.jpg">
-            <div class="tooltip">
-              Summer House
-            </div>
-          </div>
-          <div class="tooltip-container">
-            <img src="images/house4.jpg">
-            <div class="tooltip">
-              Barn House
-            </div>
-          </div>
-          <div class="tooltip-container">
-            <img src="images/house3.jpg">
-            <div class="tooltip">
-              Renovated
-            </div>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house1.jpg" alt="Summer House" loading="lazy">
+                <span class="project-badge">RESIDENTIAL</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-01 &bull; 2026</span>
+                  <span class="caption-mono-sm">EAST HAMPTON</span>
+                </div>
+                <h3 class="project-title">Summer House</h3>
+                <p class="project-description">
+                  Cantilevered coastal residence integrated into natural topography with floor-to-ceiling thermal glazing and raw timber facades.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house2.jpg" alt="Brick House" loading="lazy">
+                <span class="project-badge">MASONRY</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-02 &bull; 2025</span>
+                  <span class="caption-mono-sm">BROOKLYN</span>
+                </div>
+                <h3 class="project-title">Brick House</h3>
+                <p class="project-description">
+                  Modern urban dwelling featuring precision dark-fired brickwork, lightwell courtyards, and monolithic interior volumes.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house3.jpg" alt="Renovated" loading="lazy">
+                <span class="project-badge">ADAPTIVE REUSE</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-03 &bull; 2025</span>
+                  <span class="caption-mono-sm">HUDSON VALLEY</span>
+                </div>
+                <h3 class="project-title">Renovated</h3>
+                <p class="project-description">
+                  Comprehensive historical restoration transforming industrial heritage architecture into a light-filled contemporary studio.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house4.jpg" alt="Barn House" loading="lazy">
+                <span class="project-badge">RURAL RETREAT</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-04 &bull; 2024</span>
+                  <span class="caption-mono-sm">BERKSHIRES</span>
+                </div>
+                <h3 class="project-title">Barn House</h3>
+                <p class="project-description">
+                  Gabled agrarian silhouette reinterpreted with double-height timber post-and-beam construction and energy-positive envelope.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house2.jpg" alt="Brick House Pavilion" loading="lazy">
+                <span class="project-badge">MASONRY</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-05 &bull; 2024</span>
+                  <span class="caption-mono-sm">CONNECTICUT</span>
+                </div>
+                <h3 class="project-title">Brick House</h3>
+                <p class="project-description">
+                  Low-profile residential pavilion balanced with recessed thermal courtyards and textured geometric brick relief.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house1.jpg" alt="Summer House II" loading="lazy">
+                <span class="project-badge">COASTAL</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-06 &bull; 2024</span>
+                  <span class="caption-mono-sm">MONTAUK</span>
+                </div>
+                <h3 class="project-title">Summer House</h3>
+                <p class="project-description">
+                  Wind-resistant coastal pavilion designed around passive solar orientation and natural seawater cooling corridors.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house4.jpg" alt="Barn House Annex" loading="lazy">
+                <span class="project-badge">EXPANSION</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-07 &bull; 2023</span>
+                  <span class="caption-mono-sm">VERMONT</span>
+                </div>
+                <h3 class="project-title">Barn House</h3>
+                <p class="project-description">
+                  Minimalist timber atelier annex paired with an open-span vaulted studio and integrated geothermal climate control.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article class="project-card">
+              <div class="project-media-frame">
+                <img src="images/house3.jpg" alt="Renovated Loft" loading="lazy">
+                <span class="project-badge">INTERIOR ARCHITECTURE</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="caption-mono-sm">// PROJ-08 &bull; 2023</span>
+                  <span class="caption-mono-sm">TRIBECA</span>
+                </div>
+                <h3 class="project-title">Renovated</h3>
+                <p class="project-description">
+                  Cast-iron warehouse conversion prioritizing pure material tactility, blackened steel framework, and acoustic balance.
+                </p>
+                <div class="project-footer">
+                  <span class="caption-mono-sm">COMPLETED</span>
+                  <a href="#contact" class="btn btn-outline-sm">Inquire &rarr;</a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="about-section" id="about">
-        <h2>About</h2>
-
-        <div class="bottom-border"></div>
-
-        <p class="about-section-description">
-          It is important to take care of the patient, the patient will be followed by the patient, but at the same time it will happen that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Unless they are blinded by desire, they do not come out, they are in fault who abandon their duties, the mind softens, that is to say, it is the result of hardships, but at the same time they fall into great pains and hardships. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.
-        </p>
-
-        <div class="team-members-container">
-          <div class="single-team-member">
-            <img src="images/johndoe.jpg">
-
-            <p class="name">John Doe</p>
-
-            <p class="designation">CEO & Founder</p>
-
-            <p class="about-member">
-              He needs a boat for football to pass the entrance gate. The members of the group are parents.
-            </p>
-
-            <button class="contact-button">
-              Contact
-            </button>
+      <!-- About Section -->
+      <section class="content-band" id="about">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow-mono">// 02 &mdash; PRACTICE &amp; PHILOSOPHY</div>
+            <h2 class="display-md">About the Practice</h2>
+            <div class="divider-hairline"></div>
           </div>
 
-          <div class="single-team-member">
-            <img src="images/janedoe.jpg">
+          <p class="about-intro-text">
+            BR Architects operates at the frontier of spatial engineering, structural minimalism, and sustainable construction. Every commission begins from fundamental physics and site topography, producing buildings that eliminate superficial ornamentation in pursuit of structural clarity, enduring permanence, and authentic materials.
+          </p>
 
-            <p class="name">Jane Doe</p>
-
-            <p class="designation">CEO & Founder</p>
-
-            <p class="about-member">
-              He needs a boat for football to pass the entrance gate. The members of the group are parents.
-            </p>
-
-            <button class="contact-button">
-              Contact
-            </button>
+          <!-- Technical Metric Counters (Geist Mono Uppercase) -->
+          <div class="metrics-strip">
+            <div class="metric-cell">
+              <span class="metric-value">48+</span>
+              <span class="metric-label">// COMPLETED COMMISSIONS</span>
+            </div>
+            <div class="metric-cell">
+              <span class="metric-value">16</span>
+              <span class="metric-label">// ARCHITECTURAL AWARDS</span>
+            </div>
+            <div class="metric-cell">
+              <span class="metric-value">0.00</span>
+              <span class="metric-label">// NET ZERO CARBON RATING</span>
+            </div>
+            <div class="metric-cell">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">// STRUCTURAL HONESTY</span>
+            </div>
           </div>
 
-          <div class="single-team-member">
-            <img src="images/mikeross.jpg">
-
-            <p class="name">Mike Ross</p>
-
-            <p class="designation">Architect</p>
-
-            <p class="about-member">
-              He needs a boat for football to pass the entrance gate. The members of the group are parents.
-            </p>
-
-            <button class="contact-button">
-              Contact
-            </button>
+          <!-- Team Subsection -->
+          <div class="team-subsection-header">
+            <div class="eyebrow-mono">// LEADERSHIP &amp; ARCHITECTS</div>
+            <h3 class="display-sm">Studio Principals</h3>
           </div>
 
-          <div class="single-team-member">
-            <img src="images/danstar.jpg">
+          <div class="team-members-container">
+            <!-- Member 1 -->
+            <div class="single-team-member">
+              <div class="member-image-wrapper">
+                <img src="images/johndoe.jpg" alt="John Doe — CEO & Founder" loading="lazy">
+              </div>
+              <div class="member-info">
+                <h4 class="name">John Doe</h4>
+                <p class="designation">// CEO &amp; FOUNDING PRINCIPAL</p>
+              </div>
+              <p class="about-member">
+                Leads structural concept and geometric strategy. Focused on large-span engineered volumes and site integrations.
+              </p>
+              <a href="#contact" class="btn btn-outline-sm contact-button">Contact</a>
+            </div>
 
-            <p class="name">Dan Star</p>
+            <!-- Member 2 -->
+            <div class="single-team-member">
+              <div class="member-image-wrapper">
+                <img src="images/janedoe.jpg" alt="Jane Doe — CEO & Founder" loading="lazy">
+              </div>
+              <div class="member-info">
+                <h4 class="name">Jane Doe</h4>
+                <p class="designation">// CEO &amp; DESIGN DIRECTOR</p>
+              </div>
+              <p class="about-member">
+                Directs spatial programming and materiality. Champions circular building systems and low-carbon tectonic assemblies.
+              </p>
+              <a href="#contact" class="btn btn-outline-sm contact-button">Contact</a>
+            </div>
 
-            <p class="designation">Architect</p>
+            <!-- Member 3 -->
+            <div class="single-team-member">
+              <div class="member-image-wrapper">
+                <img src="images/mikeross.jpg" alt="Mike Ross — Principal Architect" loading="lazy">
+              </div>
+              <div class="member-info">
+                <h4 class="name">Mike Ross</h4>
+                <p class="designation">// PRINCIPAL ARCHITECT</p>
+              </div>
+              <p class="about-member">
+                Specializes in complex urban residential zoning, structural glass innovation, and precision detailing.
+              </p>
+              <a href="#contact" class="btn btn-outline-sm contact-button">Contact</a>
+            </div>
 
-            <p class="about-member">
-              He needs a boat for football to pass the entrance gate. The members of the group are parents.
-            </p>
-
-            <button class="contact-button">
-              Contact
-            </button>
+            <!-- Member 4 -->
+            <div class="single-team-member">
+              <div class="member-image-wrapper">
+                <img src="images/danstar.jpg" alt="Dan Star — Lead Structural Architect" loading="lazy">
+              </div>
+              <div class="member-info">
+                <h4 class="name">Dan Star</h4>
+                <p class="designation">// LEAD STRUCTURAL ARCHITECT</p>
+              </div>
+              <p class="about-member">
+                Coordinates seismic mechanics, timber-steel composite hybrid systems, and thermal envelope performance.
+              </p>
+              <a href="#contact" class="btn btn-outline-sm contact-button">Contact</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer & Contact -->
     <footer>
-      <section class="contact-section" id="contact">
-        <h2>Contact</h2>
-
-        <div class="bottom-border"></div>
-
-        <p>
-          Let's get in touch and talk about your next project.
-        </p>
-
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="E-mail">
-          <input type="text" placeholder="Subject">
-          <input type="text" placeholder="Comment">
-
-          <div class="button-wrapper">
-            <button>
-              SEND A MESSAGE
-            </button>
+      <!-- Contact Band -->
+      <section class="contact-band" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow-mono">// 03 &mdash; INQUIRIES &amp; COLLABORATION</div>
+            <h2 class="display-md">Contact Studio</h2>
+            <div class="divider-hairline"></div>
           </div>
-        </form>
+
+          <div class="contact-layout">
+            <div class="contact-info-col">
+              <p class="contact-lead">
+                Let's discuss your next project, site evaluation, or master plan. We consult globally on private residential and civic commissions.
+              </p>
+
+              <div class="studio-coordinates-list">
+                <div class="coordinate-item">
+                  <span class="coordinate-label">// PRINCIPAL STUDIO</span>
+                  <span class="coordinate-value">520 Hudson Street, New York, NY 10014</span>
+                </div>
+                <div class="coordinate-item">
+                  <span class="coordinate-label">// DIRECT INQUIRIES</span>
+                  <span class="coordinate-value">inquiries@brarchitects.com</span>
+                </div>
+                <div class="coordinate-item">
+                  <span class="coordinate-label">// TELEPHONE</span>
+                  <span class="coordinate-value">+1 (212) 555-0192</span>
+                </div>
+                <div class="coordinate-item">
+                  <span class="coordinate-label">// STUDIO HOURS</span>
+                  <span class="coordinate-value">MON &mdash; FRI / 09:00 &mdash; 18:00 EST</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault();">
+              <div class="form-group-grid">
+                <div class="form-field">
+                  <label class="field-label" for="client-name">// NAME</label>
+                  <input class="text-input" id="client-name" type="text" placeholder="Your name" required>
+                </div>
+                <div class="form-field">
+                  <label class="field-label" for="client-email">// E-MAIL</label>
+                  <input class="text-input" id="client-email" type="email" placeholder="email@address.com" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="field-label" for="client-subject">// PROJECT TYPE / SUBJECT</label>
+                <input class="text-input" id="client-subject" type="text" placeholder="e.g. Residential commission or site inquiry" required>
+              </div>
+
+              <div class="form-field">
+                <label class="field-label" for="client-message">// PROJECT BRIEF / COMMENT</label>
+                <textarea class="text-input" id="client-message" placeholder="Provide details regarding location, scope, and timeline..." required></textarea>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
 
-      <section class="map-section">
-        <img src="images/map.jpg">
+      <!-- Map Band -->
+      <section class="map-band">
+        <div class="container">
+          <div class="map-container">
+            <img src="images/map.jpg" alt="BR Architects Studio Location Map" loading="lazy">
+            <div class="map-overlay-badge">// STUDIO HEADQUARTERS &bull; METROPOLITAN GRID</div>
+          </div>
+        </div>
       </section>
 
-      <section class="ending-text-section">
-        <p>
-          A Practice Task by FH
-        </p>
-      </section>
+      <!-- Final Site Footer -->
+      <div class="site-footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-left">
+              <div class="footer-brand">BR Architects</div>
+              <div class="footer-tagline">Engineered Spatial Architecture &bull; A Practice Task by FH</div>
+            </div>
+
+            <div class="footer-meta">
+              // LAT 40.7128° N &bull; LON 74.0060° W
+            </div>
+
+            <ul class="footer-links">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Top &uarr;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

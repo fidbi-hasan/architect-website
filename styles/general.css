@@ -1,14 +1,338 @@
-* {
+/* ==========================================================================
+   xAI-Design System - Core Design Tokens & Foundations
+   ========================================================================== */
+
+:root {
+  /* Color Tokens */
+  --primary: #ffffff;
+  --on-primary: #0a0a0a;
+  --ink: #ffffff;
+  --ink-hover: #fafaf7;
+  --body: #dadbdf;
+  --body-mid: #7d8187;
+  --mute: #7d8187;
+  --hairline: #212327;
+  --canvas: #0a0a0a;
+  --canvas-soft: #1a1c20;
+  --canvas-card: #191919;
+  --canvas-mid: #363a3f;
+  --border-translucent: rgba(255, 255, 255, 0.25);
+  --border-translucent-hover: rgba(255, 255, 255, 0.5);
+
+  /* Accent Tokens */
+  --accent-sunset: #ff7a17;
+  --accent-sunset-soft: #ffc285;
+  --accent-dusk: #7c3aed;
+  --accent-twilight: #c4b5fd;
+  --accent-breeze: #a0c3ec;
+  --accent-midnight: #0d1726;
+
+  /* Typography Families */
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Radii */
+  --radius-none: 0px;
+  --radius-sm: 8px;
+  --radius-pill: 9999px;
+  --radius-full: 9999px;
+
+  /* Spacing Scale (4px base) */
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+  --space-4xl: 64px;
+}
+
+/* ==========================================================================
+   CSS Reset & Base Rules
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--canvas);
+  color-scheme: dark;
 }
 
 body {
-  margin: 0;
-  font-family: "Roboto", serif;
-  padding-top: 60px;
+  background-color: var(--canvas);
+  color: var(--body);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400; /* Strict adherence: weight 400 across the system */
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding-top: 64px;
 }
 
-p,
-h2 {
-  margin: 0;
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-weight: 400;
+  color: inherit;
+}
+
+/* ==========================================================================
+   Typography Hierarchy (Display & Body)
+   ========================================================================== */
+
+.display-xl {
+  font-family: var(--font-display);
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: -2.4px;
+  color: var(--ink);
+}
+
+.display-lg {
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -1.8px;
+  color: var(--ink);
+}
+
+.display-md {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  color: var(--ink);
+}
+
+.display-sm {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.6px;
+  color: var(--ink);
+}
+
+.display-xs {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
+.body-lg {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--body);
+}
+
+.body-md {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--body);
+}
+
+.body-sm {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--body-mid);
+}
+
+/* Monospace Captions & Eyebrows */
+.eyebrow-mono {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--space-xs);
+}
+
+.caption-mono-sm {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+/* ==========================================================================
+   Structural Primitives & Utilities
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
+}
+
+.divider-hairline {
+  border: none;
+  height: 1px;
+  background-color: var(--hairline);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-3xl);
+  width: 100%;
+}
+
+/* ==========================================================================
+   Interactive Buttons (Strict Pill Shapes, Translucent White Outlines)
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* The canonical translucent white outline pill */
+.btn-outline {
+  background-color: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border-translucent);
+  padding: var(--space-sm) var(--space-lg);
+}
+
+.btn-outline:hover {
+  border-color: var(--border-translucent-hover);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--ink-hover);
+}
+
+/* Compact outline pill */
+.btn-outline-sm {
+  background-color: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border-translucent);
+  padding: var(--space-xs) var(--space-md);
+  font-size: 13px;
+}
+
+.btn-outline-sm:hover {
+  border-color: var(--border-translucent-hover);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Primary white-filled pill (reserved for primary conversion actions) */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border: 1px solid var(--primary);
+  padding: var(--space-sm) var(--space-xl);
+}
+
+.btn-primary:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+/* ==========================================================================
+   Card Chrome Primitives
+   ========================================================================== */
+
+.card-content {
+  background-color: var(--canvas-card);
+  color: var(--ink);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xl);
+  transition: border-color 0.2s ease;
+}
+
+.card-content:hover {
+  border-color: var(--canvas-mid);
+}
+
+/* ==========================================================================
+   Responsive Typography & System Adaptations
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 56px;
+  }
+
+  .container {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .display-xl {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.2px;
+  }
+
+  .display-lg {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.0px;
+  }
+
+  .display-md {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+  }
+
+  .display-sm {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.3px;
+  }
 }
